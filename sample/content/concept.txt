@@ -1,0 +1,19 @@
+#Concept
+
+We need a developer friendly documentation system.
+
+Developer friendly? must be text based, more closely TXT based. Word document is not developer friendly. just try to manage multuple version of he workd document. Try to work on the same document in paralell. Are you really interested in the noisy company word layout whihc produce minimum of 6 pages of document even if it is empty(!). have you aver tried to look for specific content in a hube set of workd documents? If you tried you must be failed back to manually-open-then-search-indivicually process.
+
+So we need some source strucutre which can be generated into anything (by default make it HTML).
+
+HTML can be a primary target:
+
+- can be delivered to shared drive or compony website to play it spurpose
+- easy and lightwaight
+- good input for any other outpyt format like CHS or epub when developing some help system or some kind of other documentation.
+
+Input must be TXT (eg: Markdown)based:
+
+- readable, not like HTML or other XML based 
+- version manager friendly: whatever we want bu version management system are more effective when dealing text files instead of binary ones (like word doc)
+

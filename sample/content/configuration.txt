@@ -1,0 +1,5 @@
+#Configuration
+
+## Page header config
+
+Each page can start with `<!--(` and end with `)-->` which will be not displayed in the final output.

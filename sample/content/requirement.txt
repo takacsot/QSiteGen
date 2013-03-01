@@ -1,0 +1,59 @@
+Requirements
+============
+
+Supported input filetypesand generated output:
+
+- txt: html (Markdown)
+- html: html (no chance but apply template)
+- pdf: pdf, no change
+- doc: doc, no change
+- rtf: rtf, no change
+
+Other supported file types:
+
+- css, js: as part of the template 
+- png, jpg, bmp, jpeg: images necessary for template or document
+- groovy: for configuration
+
+All input file will be converted except thos which start with underscore (`_`). These files are **fragment**s.
+
+All files can be templating in two way:
+
+- temaplte around
+- content altering
+
+Teamplate around is the concept to providing an unified way of displaying all pages belonging to the site
+
+content altering is the whay when you could change to conent dinamicaly to reflect the semi-dinamic aspect of the site. Example: breadcrumb, navigation link which could point to all other pages, etc.
+
+## Identifier
+
+Each item has its identified which (like nanoc):
+
+- for dinamic content (html, txt): `/d1/d2/f1.txt` will become `/d1/d2/f1/`
+- for static contenen (pdf, css, jpg, all oher): `/d1/d2/style.css` will become `/d1/d2/style.css/`
+
+When reffering to document we could reffer *relatively* or in an *absolute* way. When the last part of the id is uniqe you could use that name as global and absolute reference too.
+
+##Metadata
+
+Possible to add medata informations. Example metadata:
+
+- id: idof document. will be synonyme to the automatically generated one
+- date
+- author
+
+##Page level configuration
+
+- compiler: when want to use other compiler to transform source document.
+
+## Compiles:
+
+### Markdown
+
+Default source is txt. Outpu is html
+
+### None
+
+Does nothing whch can transform the document
+That is the default for static items.
